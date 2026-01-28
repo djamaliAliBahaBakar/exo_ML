@@ -54,6 +54,8 @@ svr.fit(X_train, y_train)
 
 # Predict using the SVR model
 y_pred_scaled = svr.predict(X_test)
+
+# 
 y_pred = scaler_y.inverse_transform(y_pred_scaled.reshape(-1, 1)).flatten()
 
 
